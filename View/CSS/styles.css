@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+html, body {font-family: 'Fredoka One', cursive;}
+
+body {
+  background-color: #ffffff;
+  color: #c72222;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+  height: 150px;
+  padding-top: 35px;
+  color: rgb(0, 0, 0);
+  text-shadow: rgb(255, 255, 255) 5px 5px 5px;
+}
+
+.logo-unicaes {
+  width: 50px;
+  height: 50px;
+  -webkit-filter: grayscale(95%) brightness(120%) contrast(90%);
+  opacity: 0.9;
+}
+
+.navbar-brand {
+  color: #ffffff;
+}
+
+.imagenBanner {
+  background-image: url(../../View/IMG/padro.jpg);
+  opacity: 0.85;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+.texto {
+  font-size: 25px;
+  color: rgb(255, 255, 255);
+}
+
+.fa-chart-pie {
+  color: rgb(255, 255, 255);
+}
+
+.hoverItemOne:hover .hoverItemTwo {
+  color: rgb(212, 212, 212);
+}
+
+.inicioFilaUno {
+}
+
+.imageInicioUno {
+  width: 350px;
+  height: 280px;
+}
+
+.InicioColumnaDos {
+  margin-right: 50px;
+  background-color: rgb(255, 255, 255);
+}
+
+.centerBoton {
+  margin: auto;
+  width: 25%;
+  padding: 10px;
+}
+
+.centerGraph {
+  margin: auto;
+  width: 55%;
+  padding: 10px;
+}
+
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+  }
+
+p {
+  color: black;
+}
