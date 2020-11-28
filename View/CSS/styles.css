@@ -83,3 +83,18 @@ body {
 p {
   color: black;
 }
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.page-footer {
+  bottom:0;
+  width: 98%;
+  height:60px;   /* Height of the footer */
+  background:#fff;
+  color: #ff0000;
+}
+
+d
