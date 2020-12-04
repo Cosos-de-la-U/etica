@@ -4,6 +4,7 @@ addToShoppingCartButtons.forEach(addToCartButton => {
 });
 
 const cardDeck = document.querySelector('.card-deck');
+const shoppingCartContainer = document.querySelector('.printingHere');
 
 //CAPTURO EL EVENTO
 function addToCartClicked(event){
@@ -18,26 +19,53 @@ function addToCartClicked(event){
 };
 
 function addItemToShoppingCart(cardTitle, cardPrice, cardImg){
-    const shoppingCartRow = document.createElement('div');
+    const shoppingCartRow = document.createElement('tr');
+    shoppingCartRow.setAttribute("class", "ShoppingCartItem");
     const shoppingCartContent =    
-        `<div class="row shoppingCartCard">
-            <div class="col-6">
-                <div class="shopping-cart-item d-flex align-item-center h100 border-0">
-                    <img src=${cardImg} class="shopping-cart-image">
-                    <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0>${cardTitle}</h6>
-                </div>
-            </div>
-            <div class="col=2">
-                <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
-                    <p class="item-price mb-0 shoppingCartItemPrice">${cardPrice}</p>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3>
-                <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number" value="1">
-                <button class="btn btn-danger buttonDelete" type="button">X</button>
-                </div>
-            </div>
-        </div>`;
-    console.log('addToCartClicked -> cardTitle : ',cardTitle + " " + cardPrice + " " + cardImg);
+`
+          <td class="pt-5 itemImg">
+            <img class="img-fluid img-thumbnail" src=${cardImg} height="150" width="150" alt="Card image cap">
+          </td>
+          <td class="itemTitle pt-5">
+            ${cardTitle}
+          </td>
+          <td class="itemPrice pt-5">
+            ${cardPrice}
+          </td>
+          <td class="itemCant pt-5">
+            <input class="shopping-cart-quantity-input shoppingCartItemQuantity border-0" type="number" value="1"
+              max="10">
+          </td>
+          <td class="pt-5">
+            <button class="btn btn-danger buttonDelete" type="button">X</button>
+          </td>`;
+
+        shoppingCartRow.innerHTML = shoppingCartContent;
+        shoppingCartContainer.append(shoppingCartRow);
+            console.log('addToCartClicked -> cardTitle : ',cardTitle + " " + cardPrice + " " + cardImg);
+
+            updateShopingCartTotal()
+};
+
+function updateShopingCartTotal() {
+    let totalilnho = 0;
+
+    const shoppingCartTotal = document.querySelector('.total');
+    console.log(shoppingCartTotal);
+
+    const shoppingCartItems = document.querySelectorAll('.ShoppingCartItem');
+    console.log(shoppingCartItems);
+
+    shoppingCartItems.forEach((ShoppingCartItem) => {
+        const shoppingCartItemPriceElement = ShoppingCartItem.querySelector('.itemPrice');
+
+        const shoppingCartItemPrice = Number(shoppingCartItemPriceElement.textContent.replace('$',''));
+
+        const shoppingtCartItemQuantityElement = Number(ShoppingCartItem.querySelector('.shoppingCartItemQuantity').value);
+
+        totalilnho = totalilnho + shoppingCartItemPrice * shoppingtCartItemQuantityElement;
+        console.log(totalilnho);
+
+        shoppingCartTotal.innerHTML = `Total: $${totalilnho.toFixed(2)}`;
+    });
 };
