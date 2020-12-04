@@ -1,11 +1,17 @@
 console.log('ando corriendo');
 //FUNCION PARA ANADIR COSOS AL CARRITO DE COMPRAS
 let carro = document.querySelectorAll('.compra');
-
+//EJEMPLO DEL JSON
 let quesos = [
     {
-        nombre : ''
-        
+        nombre : 'Guerlain Meteorites Light',
+        precio : '5',
+        enCarrito : '0'
+    },
+        {
+        nombre : 'Guerlain Meteorites Light',
+        precio : '5',
+        enCarrito : '0'
     }
 ]
 
