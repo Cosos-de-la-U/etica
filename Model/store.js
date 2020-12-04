@@ -231,7 +231,7 @@ let otros = [
     }
 
     {
-        nombre : 'Miel',
+        nombre : 'Miel Salvadoreña',
         precio : '5.00',
         enCarrito : '0'
     }
