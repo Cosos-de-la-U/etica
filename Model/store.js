@@ -33,7 +33,9 @@ function addItemToShoppingCart(cardTitle, cardPrice, cardImg){
                 </div>
             </div>
             <div class="col-4">
-                <div class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100>
+                <div class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3>
+                <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number" value="1">
+                <button class="btn btn-danger buttonDelete" type="button">X</button>
                 </div>
             </div>
         </div>`;
