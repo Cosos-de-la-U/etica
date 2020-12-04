@@ -1,6 +1,14 @@
 console.log('ando corriendo');
 //FUNCION PARA ANADIR COSOS AL CARRITO DE COMPRAS
 let carro = document.querySelectorAll('.compra');
+
+let quesos = [
+    {
+        nombre : ''
+        
+    }
+]
+
 //QUE ITERE PARA ANADIRLOS => ES UNA FUNCION
 for (let index = 0; index < carro.length; index++) {
     console.log("added to cart " + index);  
@@ -8,9 +16,11 @@ for (let index = 0; index < carro.length; index++) {
         console.log("added to cart");
     })
 }
-
+//FUNCION PARA AGREGAR AL CARRITO DE COMPRAS
 function carritoNumeros(){
-    localStorage.setItem('carritoNumeros',1);
+    let productoNumber = localStorage.setItem('carritoNumeros',1);
+
+    productoNumbers = parseInt(productoNumbers);
     localStorage.setItem('')
 }
 
