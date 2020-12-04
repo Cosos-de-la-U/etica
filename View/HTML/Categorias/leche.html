@@ -226,8 +226,37 @@
                 </div>
             </div>
         </div>
+
+
+    <div class="container-fluid py-2">
+        <table class="table table-responsive-sm table-responsive-md ">
+            <thead class="thead-primary bg-primary text-light">
+                <tr>
+                    <th scope="col-4">Imagen</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Precio</th>
+                    <th scope="col">Cantidad</th>
+                    <th scope="col"></th>
+                </tr>
+            </thead>
+            <tbody class="printingHere">
+
+            </tbody>
+        </table>
+    <div class="container center">
+        <div class="row">
+            <div class="col-3  py-2 text-danger rounded">
+                <h5 class="total">Total: $0.00 </h5>
+            </div>
+            <div class="col-9">
+                <button class="buyButton btn btn-primary center " type="button" onclick="buyButtonAction()">Comprar</button>
+            </div>
+        </div>
+    </div>
+    </div>
         <footer></footer>
     </div>
+    <script src="/dpw-proyecto/Model/store.js"></script>
     <script src="sweetalert2/dist/sweetalert2.all.min.js"></script>
     <!-- Include a polyfill for ES6 Promises (optional) for IE11 -->
     <script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8/dist/polyfill.js"></script>
