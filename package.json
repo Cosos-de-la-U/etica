@@ -1,0 +1,22 @@
+{
+  "name": "dpw-proyecto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raulpenate/dpw-proyecto.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raulpenate/dpw-proyecto/issues"
+  },
+  "homepage": "https://github.com/raulpenate/dpw-proyecto#readme",
+  "dependencies": {
+    "sweetalert2": "^10.11.1"
+  }
+}
