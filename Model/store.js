@@ -3,10 +3,15 @@ console.log('ando corriendo');
 let carro = document.querySelectorAll('.compra');
 //QUE ITERE PARA ANADIRLOS => ES UNA FUNCION
 for (let index = 0; index < carro.length; index++) {
-    console.log("added to cart " + index);
-    carro[i].addEventListener('click', () => {
+    console.log("added to cart " + index);  
+    carro[index].addEventListener('click', () => {
         console.log("added to cart");
     })
+}
+
+function carritoNumeros(){
+    localStorage.setItem('carritoNumeros',1);
+    localStorage.setItem('')
 }
 
 //FUNCION DE REMOVER COSAS DEL CARRITO DE COMPRAS
