@@ -19,39 +19,21 @@
 </head>
 
 <body>
-  <div class="container-fluid">
+  <div class="container-fluid center">
     <header></header>
     <nav></nav>
+    <br>
+    <br>
     <div class="Inicio"></div>
-  <section class="page-section clearfix">
-    <div class="container">
-      <div class="intro">
-
-      </div>
-    </div>
-  </section>
-
+    <h1 style="text-decoration: underline;">Actividad Uno</h1>
+    <br>
+    <br>
+    <iframe width="720" height="515" src="https://www.youtube.com/embed/JYJakoGzjbk">
+    </iframe>
   <section class="page-section pb-5">
-    <div class="container">
-      <br><br><br>
-      <div class="row">
-        <div class="col-xl-9 mx-auto">
-          <div class="cta-inner text-center rounded">
-            <h2 class="section-heading mb-4">
-              <span class="section-heading-upper">Hecho por Raul Peñate</span>
-              <span class="section-heading-lower"></span>
-              <div class="container">
-              </div>
-            </h2>
-            <p class="mb-0">Examen de aplicación de principios de la ética social</p>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
+    <footer></footer>
   </div>
-  <br><br><br><br><br>
-  <footer></footer>
   <!-- JQuery es maravilo -->
   <script src="/etica/Controller/JS/jquery-3.5.1.min.js"></script>
   <script src="/etica/Controller/JS/jquery.includeHTML.min.js"></script>
@@ -61,6 +43,7 @@
       $("header").loadHTML("/etica/View/HTML/Elementos/header.html");
       $("nav").loadHTML("/etica/View/HTML/Elementos/nav.html");
       $("div .Inicio").loadHTML("/etica/View/HTML/Inicio/Inicio.html");
+      $("div .Web").loadHTML("/etica/View/Coso/actividadUno/ControlLecutraRaulPenate.html");
       $("footer").loadHTML("/etica/View/HTML/Elementos/footer.html");
     });
   </script>
